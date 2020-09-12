@@ -175,6 +175,9 @@ $ calicoctl get ipPool -o yaml
 >   -e CALICO_IPV4POOL_CIDR=172.20.0.0/16 \\  
 > \#镜像名，为了加快大家的下载速度，镜像都放到了阿里云上  
 >   registry.cn-hangzhou.aliyuncs.com/imooc/calico-node:v2.6.2  
+#### 5.5 常见异常问题
+1.部署CalicoNode时报错ERROR: Unable to access datastore to query node configuration
+  如果是centos版本，请查看centos自带防火墙是否已关闭，iptables是否开放了端口
 
 ## 6. 配置kubectl命令（任意节点）
 #### 6.1 简介
